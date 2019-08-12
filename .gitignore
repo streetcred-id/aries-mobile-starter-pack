@@ -18,8 +18,8 @@
 [Rr]elease/
 [Rr]eleases/
 x64/
-!**/x86/88/*.so
 x86/
+!**/libs/**/x86
 bld/
 [Bb]in/
 [Oo]bj/
