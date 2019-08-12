@@ -95,12 +95,45 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Libraries\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mobile\Mobile.csproj">
       <Project>{07AC3E5B-8F87-4000-8352-1EA59C9E464F}</Project>
       <Name>Mobile</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidNativeLibrary Include="..\..\libs\android\arm64-v8a\libgnustl_shared.so">
+      <Link>Libraries\arm64-v8a\libgnustl_shared.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\..\libs\android\arm64-v8a\libindy.so">
+      <Link>Libraries\arm64-v8a\libindy.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\..\libs\android\armeabi\libindy.so">
+      <Link>Libraries\armeabi\libindy.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\..\libs\android\armeabi-v7a\libgnustl_shared.so">
+      <Link>Libraries\armeabi-v7a\libgnustl_shared.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\..\libs\android\armeabi-v7a\libindy.so">
+      <Link>Libraries\armeabi-v7a\libindy.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\..\libs\android\x86\libgnustl_shared.so">
+      <Link>Libraries\x86\libgnustl_shared.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\..\libs\android\x86\libindy.so">
+      <Link>Libraries\x86\libindy.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\..\libs\android\x86_64\libgnustl_shared.so">
+      <Link>Libraries\x86_64\libgnustl_shared.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\..\libs\android\x86_64\libindy.so">
+      <Link>Libraries\x86_64\libindy.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\..\libs\android\armeabi\libgnustl_shared.so">
+      <Link>Libraries\armeabi\libgnustl_shared.so</Link>
+    </AndroidNativeLibrary>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
